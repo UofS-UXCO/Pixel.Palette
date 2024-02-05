@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
   <link rel="stylesheet" href="style/style.css">
   <title>Pixel.Palette</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div id="navbar"></div>
   <div id="hero-section"></div>
+
+  <!--Workshop Section-->
   <div id="workshop-section">
     <div class="workshop-header">
       <h1>Workshop</h1>
@@ -22,20 +25,34 @@
     </div>
   </div>
 
+  <!--Submission Section-->
   <div id="submission-section">
     <div class="submission-header">
       <h1>Submission</h1>
       <p>Lorem ipsum dolor sit amet. Aut quidem exercitationem non sequi voluptates natus!<br> Non quia laboriosam qui odio enim id galisum voluptatem sit dolores eligendi est dolores praesentium.</p>
     </div>
     <div class="submission-btn">
-      <button onclick="">Submit your work</button>
+      <button onclick='window.open("https://www.youtube.com/playlist?list=PLMogK52Wz9HK0Fwl7FaWsUCTNiBpNC0Qn","_blank")'>Submit your work</button>
     </div>
   </div>
 
+  <!--Footer Section-->
   <div id="footer-section">
     <div class="footer-header">
-      <p>UX Collective</p>
+      <div class="credit">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i>2024 UX Collective</p>
+        <p>University of Saskatchewan</p>
+      </div>
+      <div class="social-medias">
+        <a><ion-icon name="logo-discord"></ion-icon></a>
+        <a><ion-icon name="logo-instagram"></ion-icon></a>
+        <a><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
     </div>
   </div>
+
+  <!--ion-icon external library links-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

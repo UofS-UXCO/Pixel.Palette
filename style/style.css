@@ -67,3 +67,28 @@ body {
   padding: 20px 50px;
   border:#000 solid 2.5px;
 }
+
+/*Footer style section*/
+#footer-section{
+  height:20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.credit{
+  font-size: 1em;
+  margin-bottom: 50px;
+}
+
+.social-medias{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-medias ion-icon{
+  font-size: 3em;
+}
