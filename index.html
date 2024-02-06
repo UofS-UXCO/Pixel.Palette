@@ -9,11 +9,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div id="navbar"></div>
-  <div id="hero-section"></div>
+  <nav id="navbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+
+    <div class="container">
+      <div class="navbar-content">
+        <ul class="navbar-links">
+          <li><a href="#">Workshop</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Submit</a></li>
+        </ul>
+
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    
+    <ul class="mobile-menu">
+      <li><a href="#landing-section">Workshop</a></li>
+      <li><a href="about-us.html">FAQ</a></li>
+      <li><a href="membership.html">Submit</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero-section">
+    <div class="heading">
+      <h1>Pixel.Palette, Lorem ipsum dolor - sit amet. Non quia laboriosam qui odio enim id galisum.</h1>
+    </div>
+
+    <div class="description">
+      <p>Lorem ipsum dolor sit amet. Aut quidem exercitationem non sequi voluptates natus. Non quia laboriosam qui odio enim id galisum voluptatem sit dolores eligendi est.</p>
+    </div>
+
+    <button class="signUp" onclick='window.open("https://www.youtube.com/playlist?list=PLMogK52Wz9HK0Fwl7FaWsUCTNiBpNC0Qn","_blank")'>Sign Up <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+    </section>
 
   <!--Workshop Section-->
-  <div id="workshop-section">
+  <section id="workshop-section">
     <div class="workshop-header">
       <h1>Workshop</h1>
     </div>
@@ -23,10 +60,10 @@
       <img src="img/workshop-sample.png">
       <img src="img/workshop-sample.png">
     </div>
-  </div>
+  </section>
 
   <!--Submission Section-->
-  <div id="submission-section">
+  <section id="submission-section">
     <div class="submission-header">
       <h1>Submission</h1>
       <p>Lorem ipsum dolor sit amet. Aut quidem exercitationem non sequi voluptates natus!<br> Non quia laboriosam qui odio enim id galisum voluptatem sit dolores eligendi est dolores praesentium.</p>
@@ -34,23 +71,24 @@
     <div class="submission-btn">
       <button onclick='window.open("https://www.youtube.com/playlist?list=PLMogK52Wz9HK0Fwl7FaWsUCTNiBpNC0Qn","_blank")'>Submit your work</button>
     </div>
-  </div>
+  </section>
 
   <!--Footer Section-->
-  <div id="footer-section">
+  <section id="footer-section">
     <div class="footer-header">
-      <div class="credit">
-        <p><i class="fa fa-copyright" aria-hidden="true"></i>2024 UX Collective</p>
-        <p>University of Saskatchewan</p>
-      </div>
       <div class="social-medias">
         <a><ion-icon name="logo-discord"></ion-icon></a>
         <a><ion-icon name="logo-instagram"></ion-icon></a>
         <a><ion-icon name="logo-linkedin"></ion-icon></a>
       </div>
+      <div class="credit">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i>2024 UX Collective</p>
+        <p>University of Saskatchewan</p>
+      </div>
     </div>
-  </div>
+  </section>
 
+  <script defer src="script/script.js"></script>
   <!--ion-icon external library links-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
