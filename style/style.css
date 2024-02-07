@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -10,6 +13,7 @@ body {
   padding: 0;
   overflow-y: scroll;
   background-color: #fff9f2;
+  font-family: 'Roboto Mono', monospace;
 }
 
 section{
@@ -42,10 +46,12 @@ nav.shrink {
 
 .logo{
   margin: 20px 50px;
+  display: flex;
+  gap: 20px;
 }
 
 .logo img {
-  height: 75px;
+  height: 4vh;
   width: auto;
   transition: all 1s;
 }
@@ -101,7 +107,7 @@ nav.shrink {
 .line {
   width: 25px;
   height: 1.5px;
-  background-color: #5c6224;
+  background-color: #333;
   margin: 4px 0;
 }
 
@@ -222,6 +228,29 @@ nav.shrink {
   display: inline-block; /* Ensures images are in line */
 }
 
+/*FAQ style section*/
+#faq-section{
+  min-height: 80vh;
+  margin: 20px 50px;
+}
+
+.faq-header{
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.faq-content{
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  gap: 40px;
+}
+
+.faq-content .faq{
+  max-width: 40vw;
+  flex-basis: calc(50% - 10px); /* Assumes a 20px gap; adjust as necessary */
+  margin-bottom: 20px; /* Adds space between rows */
+}
+
 /*Submission style section*/
 #submission-section{
   min-height: 80vh;
@@ -307,6 +336,10 @@ nav.shrink {
 
   #workshop-section{
     padding-top: 150px;
+  }
+
+  .faq-content{
+    flex-direction: column;
   }
 }
 
