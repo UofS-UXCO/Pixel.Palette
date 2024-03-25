@@ -9,115 +9,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav id="navbar">
+  <nav>
     <div class="logo">
       <img src="img/logo.png" alt="Logo">
-      <h3>&#215; Pixel.Palette</h3>
+      <h3>&#215; The 88 Gallery</h3>
     </div>
 
-    <div class="container">
-      <div class="navbar-content">
-        <ul class="navbar-links">
-          <li><a href="#workshop-section">Workshop</a></li>
-          <li><a href="#faq-section">FAQ</a></li>
-          <li><a href="#submission-section">Submit</a></li>
-        </ul>
-
-        <div class="hamburger-menu">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </div>
-    </div>
-    
-    <ul class="mobile-menu">
-      <li><a href="#workshop-section">Workshop</a></li>
-      <li><a href="#faq-section">FAQ</a></li>
-      <li><a href="#submission-section">Submit</a></li>
-    </ul>
   </nav>
-
-  <section id="hero-section">
-    <div class="heading">
-      <h1>Pixel.Palette, Lorem ipsum dolor - sit amet.</h1>
-    </div>
-
-    <div class="description">
-      <p>Lorem ipsum dolor sit amet. Aut quidem exercitationem non sequi voluptates natus. Non quia laboriosam qui odio enim id galisum voluptatem sit dolores eligendi est.</p>
-    </div>
-
-    <button class="signUp" onclick='window.open("https://www.youtube.com/playlist?list=PLMogK52Wz9HK0Fwl7FaWsUCTNiBpNC0Qn","_blank")'>Sign Up <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+  <div class="container">
+    <section id="hero-section">
+      <div class="heading">
+        <h1>Pixel.Palette -</h1>
+        <h2>Art as a form of website.</h2>
+      </div>
+  
+      <div class="description">
+        <p>Exhibit - A student art exhibit & reception represented by UX Collective and The Eighty-Eight Gallery.</p>
+      </div>
     </section>
 
-  <!--Workshop Section-->
-  <section id="workshop-section">
-    <div class="workshop-header">
-      <h1>Workshop</h1>
-    </div>
-    <div class="img-container">
-      <img src="img/workshop-sample.png">
-      <img src="img/workshop-sample.png">
-      <img src="img/workshop-sample.png">
-      <img src="img/workshop-sample.png">
-    </div>
-  </section>
-
-  <!--FAQ Section-->
-  <section id="faq-section">
-    <div class="faq-header">
-      <h1>FAQ</h1>
-    </div>
-
-    <div class="faq-content">
-      <div class="faq">
-        <h2>Who can participate?</h2>
-        <p>This event is opened for every students and alumni of Usask, who are interested in creating a website as an art form!</p>
+    <section class="img-slider-wrapper">
+      <div class="img-slider">
+          <!-- Images for the slider -->
+          <img src="img/workshop-sample.png" alt="Image 1" class="slide" style="display:block;">
+          <img src="img/intersection1-img.png" alt="Image 2" class="slide">
       </div>
-      <div class="faq">
-        <h2>Can I join without any experience?</h2>
-        <p>We have basic workshops through out this event which guide and help you creating your own work &#40;e.g., front-end programming, design and art &#41;</p>
-      </div>
-      <div class="faq">
-        <h2>Who can participate?</h2>
-        <p>This event is opened for every students and alumni of Usask, who are interested in creating a website as an art form!</p>
-      </div>
-      <div class="faq">
-        <h2>Can I join without any experience?</h2>
-        <p>We have basic workshops through out this event which guide and help you creating your own work &#40;e.g., front-end programming, design and art &#41;</p>
-      </div>
-    </div>
-  </section>
-
-  <!--Submission Section-->
-  <section id="submission-section">
-    <div class="submission-header">
-      <h1>Submission</h1>
-      <p>Lorem ipsum dolor sit amet. Aut quidem exercitationem non sequi voluptates natus! Non quia laboriosam qui odio.</p>
-    </div>
-    <div class="submission-btn">
-      <button onclick='window.open("https://www.youtube.com/playlist?list=PLMogK52Wz9HK0Fwl7FaWsUCTNiBpNC0Qn","_blank")'>Submit Your Work</button>
-    </div>
-  </section>
-
-  <!--Footer Section-->
-  <section id="footer-section">
-    <div class="footer-header">
-      <div class="social-medias">
-        <a><ion-icon name="logo-discord"></ion-icon></a>
-        <a><ion-icon name="logo-instagram"></ion-icon></a>
-        <a><ion-icon name="logo-linkedin"></ion-icon></a>
-      </div>
-      <div class="credit">
-        <p><i class="fa fa-copyright" aria-hidden="true"></i>2024 UX Collective</p>
-        <p>University of Saskatchewan</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <script defer src="script/script.js"></script>
   <!--ion-icon external library links-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
+<footer>
+  <div class="social-links">
+    <a class="discord"><ion-icon name="logo-discord"></ion-icon></a>
+    <a class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
+  </div>
+</footer>
 </html>
