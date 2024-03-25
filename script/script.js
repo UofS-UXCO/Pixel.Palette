@@ -1,9 +1,9 @@
 // X-axis scroll-able slider.
-//document.addEventListener("wheel", function(e) {
-  //const deltaX = e.deltaY;
-  //const slider = document.querySelector('.img-slider-wrapper');
-  //slider.scrollLeft += deltaX;
-//});
+// document.addEventListener("wheel", function(e) {
+//   const deltaX = e.deltaY;
+//   const slider = document.querySelector('.img-slider-wrapper');
+//   slider.scrollLeft += deltaX;
+// });
 
 //Auto Gallery Slider.
 document.addEventListener('DOMContentLoaded', (event) => {
