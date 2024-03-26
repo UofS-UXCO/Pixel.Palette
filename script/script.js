@@ -22,3 +22,18 @@
 //       setTimeout(showSlides, 5000); // Change image every 5 seconds
 //   }
 // });
+
+// Listen for the scroll event on the window object
+window.addEventListener('scroll', function() {
+  // Select the nav element
+  var nav = document.getElementById('navbar');
+
+  // Check if the page is scrolled more than 50 pixels vertically
+  if(window.scrollY > 30) {
+    // If yes, add the "shrink" class to the nav
+    nav.classList.add('shrink');
+  } else {
+    // Otherwise, remove the "shrink" class from the nav
+    nav.classList.remove('shrink');
+  }
+});
