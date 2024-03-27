@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: scroll;
-  background-color: EEEFEF;
+  background-color: #fff;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -108,7 +108,7 @@ section{
 }
 
 #hero-section img{
-  max-width: 30vw;
+  max-width: 35vw;
   height:auto;
 }
 
@@ -118,9 +118,17 @@ section{
 
 #hero-section h1{
   font-family: "Space Mono", sans-serif;
-  color: #0094FF;
-  font-size:5em;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #000;
+  font-size:8em;
+  text-shadow: 
+  -2px -2px 0 #333, 2px -2px 0 #333, 
+  -2px 2px 0 #333, 2px 2px 0 #333,
+  -1px -2px 0 #333, 1px -2px 0 #333,
+  -2px -1px 0 #333, 2px -1px 0 #333,
+  -2px 1px 0 #333, 2px 1px 0 #333,
+  -1px 2px 0 #333, 1px 2px 0 #333;
+  line-height: 12vh;
+  margin-bottom: 5vh;
 }
 
 .description{
@@ -128,7 +136,7 @@ section{
 }
 
 #hero-section p{
-  font-size: 2em;
+  font-size: 1em;
 }
 
 
@@ -152,10 +160,16 @@ section{
 }
 
 .workshop-header {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-size: 2em;
+  text-shadow: 
+  -2px -2px 0 #000, 2px -2px 0 #000, 
+  -2px 2px 0 #000, 2px 2px 0 #000,
+  -1px -2px 0 #000, 1px -2px 0 #000,
+  -2px -1px 0 #000, 2px -1px 0 #000,
+  -2px 1px 0 #000, 2px 1px 0 #000,
+  -1px 2px 0 #000, 1px 2px 0 #000;
+  font-size: 4em;
   margin-bottom: 50px;
-  color:#DB4B93;
+  color: #0094FF;
 }
 
 .img-container {
@@ -176,9 +190,10 @@ section{
 }
 
 .img-container img {
-  max-width: 40%;
+  max-width: 40vw;
   height: auto;
   display: inline-block; /* Ensures images are in line */
+  border: #000 solid;
 }
 
 /* Project*/
@@ -193,10 +208,16 @@ section{
 }
 
 .project-header h1 {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: 
+  -2px -2px 0 #000, 2px -2px 0 #000, 
+  -2px 2px 0 #000, 2px 2px 0 #000,
+  -1px -2px 0 #000, 1px -2px 0 #000,
+  -2px -1px 0 #000, 2px -1px 0 #000,
+  -2px 1px 0 #000, 2px 1px 0 #000,
+  -1px 2px 0 #000, 1px 2px 0 #000;
   margin-bottom: 50px;
-  font-size: 3em;
-  color:#f6f21c;
+  font-size: 7em;
+  color:#DB4B93;
 }
 
 .project-feature .project h1{
@@ -209,6 +230,10 @@ section{
   font-weight: 400;
   font-style: italic;
   margin-bottom: 10px;
+}
+
+.project p{
+  text-align: justify;
 }
 
 .project-feature {
@@ -235,6 +260,11 @@ section{
   height: auto; 
   margin-bottom: 15px;
   border: #000 solid;
+  transition: all 1s ease-out;
+}
+
+.project-feature .project img:hover{
+  transform: rotate(2deg);
 }
 
 
@@ -247,9 +277,16 @@ section{
 }
 
 .faq-header{
-  font-size: 2em;
+  color:#f6f21c;
+  font-size: 5em;
   margin-bottom: 30px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: 
+  -2px -2px 0 #000, 2px -2px 0 #000, 
+  -2px 2px 0 #000, 2px 2px 0 #000,
+  -1px -2px 0 #000, 1px -2px 0 #000,
+  -2px -1px 0 #000, 2px -1px 0 #000,
+  -2px 1px 0 #000, 2px 1px 0 #000,
+  -1px 2px 0 #000, 1px 2px 0 #000;
 }
 
 .faq-content{
@@ -262,6 +299,10 @@ section{
   max-width: 40vw;
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px; /* Adds space between rows */
+}
+
+.faq p{
+  text-align: justify;
 }
 
 /*Footer style section*/
@@ -287,6 +328,10 @@ section{
 
 .social-medias ion-icon{
   font-size: 3em;
+}
+
+.social-medias a{
+  color: #000;
 }
 
 /*intersection assets*/
@@ -349,7 +394,7 @@ section{
   }
 
   #hero-section h1{
-    font-size:3em;
+    font-size:5em;
   }
 
   #hero-section h2{
@@ -372,6 +417,14 @@ section{
     text-align: left;
   }
 
+  .workshop-header {
+    font-size: 2em;
+  }
+
+  .project-header h1 {
+    font-size: 3em;
+  }
+
   .img-container img {
     max-width: 70vw;
   }  
@@ -381,7 +434,11 @@ section{
   }
 
   .faq-content .faq{
-    max-width: 100vw;
+    max-width: 80vw;
+  }
+
+  .faq-header{
+    font-size: 3em;
   }
 
   .faq-content h2{

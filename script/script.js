@@ -33,3 +33,24 @@ window.addEventListener('scroll', function() {
     nav.classList.remove('shrink');
   }
 });
+
+//GSAP animation on scroll
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray("section").forEach(section => {
+  gsap.from(section, {
+    duration: 1,
+    x: '-0.5%',
+    autoAlpha: 0,
+    ease: 'power1.out', // Smooth and gentle easing
+    scrollTrigger: {
+      trigger: section,
+      start: "top 90%",
+      end: "top 10%",
+      toggleActions: "play none none none"
+    }
+  });
+});
+
+
+
