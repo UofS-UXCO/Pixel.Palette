@@ -52,5 +52,64 @@ gsap.utils.toArray("section").forEach(section => {
   });
 });
 
+//Modal Image function
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById("myModal");
+  const modalImg = document.getElementById("img01");
+  const captionText = document.querySelector(".caption");
+  const imgs = document.querySelectorAll('.img-container img');
+  const closeBtn = document.querySelector(".close");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+
+  let currentIndex = 0; // Track the current index of the displayed image
+
+  // Function to open modal at a specific image index
+  function openModal(index) {
+    modal.style.display = "block";
+    modalImg.src = imgs[index].src;
+    captionText.innerHTML = imgs[index].alt;
+    currentIndex = index; // Update current index
+  }
+
+  // Adding event listeners to images to open modal
+  imgs.forEach((img, index) => {
+    img.addEventListener('click', () => openModal(index));
+  });
+
+  // Close button event listener
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+
+  // Navigate to the previous image
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      openModal(currentIndex - 1);
+    } else {
+      openModal(imgs.length - 1); // Loop back to the last image
+    }
+  });
+
+  // Navigate to the next image
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < imgs.length - 1) {
+      openModal(currentIndex + 1);
+    } else {
+      openModal(0); // Loop back to the first image
+    }
+  });
+
+  // Optional: Close modal on click outside of the image
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+
+
+
 
 

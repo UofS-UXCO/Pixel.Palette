@@ -190,10 +190,74 @@ section{
 }
 
 .img-container img {
-  max-width: 40vw;
+  width: 40vw;
   height: auto;
-  display: inline-block; /* Ensures images are in line */
+  display: inline-block;
   border: #000 solid;
+}
+
+/* Modal Image Gallery */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50vw;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  text-shadow: 
+  -2px -2px 0 #000, 2px -2px 0 #000, 
+  -2px 2px 0 #000, 2px 2px 0 #000,
+  -1px -2px 0 #000, 1px -2px 0 #000,
+  -2px -1px 0 #000, 2px -1px 0 #000,
+  -2px 1px 0 #000, 2px 1px 0 #000,
+  -1px 2px 0 #000, 1px 2px 0 #000;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 52.5%;
+  transform: translateY(-50%);
+  z-index: 1050;
+}
+
+.arrows a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 
+  -2px -2px 0 #000, 2px -2px 0 #000, 
+  -2px 2px 0 #000, 2px 2px 0 #000,
+  -1px -2px 0 #000, 1px -2px 0 #000,
+  -2px -1px 0 #000, 2px -1px 0 #000,
+  -2px 1px 0 #000, 2px 1px 0 #000,
+  -1px 2px 0 #000, 1px 2px 0 #000;
+  cursor: pointer;
+  padding: 0 20px;
+  user-select: none; /* Prevent text selection */
 }
 
 /* Project*/
@@ -427,6 +491,7 @@ section{
 
   .img-container img {
     max-width: 70vw;
+    height: auto;
   }  
 
   .faq-content{
