@@ -194,6 +194,11 @@ section{
   height: auto;
   display: inline-block;
   border: #000 solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.img-container img:hover{
+  transform: scale(1.01);
 }
 
 /* Modal Image Gallery */
@@ -215,13 +220,14 @@ section{
   display: block;
   width: 50vw;
   height: auto;
+  border: #000 solid;
 }
 
 .close {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #fff;
+  color:#DB4B93;
   text-shadow: 
   -2px -2px 0 #000, 2px -2px 0 #000, 
   -2px 2px 0 #000, 2px 2px 0 #000,
@@ -245,7 +251,7 @@ section{
 }
 
 .arrows a {
-  color: #fff;
+  color: #0094FF;
   font-weight: bold;
   font-size: 30px;
   text-shadow: 
