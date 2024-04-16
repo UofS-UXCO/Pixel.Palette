@@ -484,7 +484,15 @@ section{
   }
 
   .project h1{
-    text-align: left;
+    text-align: center;
+  }
+
+  .project h2{
+    text-align: center;
+  }
+
+  .project p{
+    font-size: 0.7em;
   }
 
   .workshop-header {
