@@ -190,7 +190,7 @@ section{
 }
 
 .img-container img {
-  width: 40vw;
+  width: 50vw;
   height: auto;
   display: inline-block;
   border: #000 solid;
@@ -218,7 +218,7 @@ section{
 .modal-content {
   margin: auto;
   display: block;
-  width: 50vw;
+  width: 59vw;
   height: auto;
   border: #000 solid;
 }
@@ -245,13 +245,13 @@ section{
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  top: 52.5%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 1050;
 }
 
 .arrows a {
-  color: #0094FF;
+  color:#f6f21c;
   font-weight: bold;
   font-size: 30px;
   text-shadow: 
@@ -496,7 +496,7 @@ section{
   }
 
   .img-container img {
-    max-width: 70vw;
+    max-width: 100vw;
     height: auto;
   }  
 
@@ -518,5 +518,9 @@ section{
 
   .faq-content p{
     font-size: 0.8em;
+  }
+
+  .modal-content {
+    width: 75vw;
   }
 }
