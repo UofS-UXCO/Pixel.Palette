@@ -491,6 +491,11 @@ section{
     font-size: 2em;
   }
 
+  .project-header{
+    align-items: center;
+    justify-self: center;
+  }
+
   .project-header h1 {
     font-size: 3em;
   }
